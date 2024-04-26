@@ -6,13 +6,21 @@
   <title>Mike's Hub</title>
   <link href="./style.css" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="./my images/icon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--<link rel="stylesheet" href="./public/main.js"> -->
 </head>
 <body class="bg-orange-400 p-3 h-lvh">
-  <div class="container mx-auto px-4">  <header class="flex justify-between items-center p-4 rounded-md bg-gray-700 py-4">  <h1 class="text-3xl font-serif text-white">Michael A. Moses</h1>
-      <nav class="flex space-x-4 list-none underline decoration-solid">  <li class="hover:text-gray-200"><a href="project.html">Mini Projects</a></li>
+  <div class="container mx-auto px-4">  
+    <header class="flex justify-between items-center p-4 rounded-md bg-gray-700 py-4">  <h1 class="text-3xl font-serif text-white">Michael A. Moses</h1>
+    <button type="button" data-dropdown-toggle="dropdownMenu"><i class="fa-solid fa-bars"></i>
+      <nav class="flex space-x-4 list-none underline decoration-solid"> 
+        <ul id="dropdownMenu" class="hidden dropdown-menu absolute text-white pt-1 hover:bg-black">
+         <li class="hover:text-gray-200"><a href="project.html">Mini Projects</a></li>
         <li class="hover:text-gray-200"><a href="about.html">About</a></li>
         <li class="hover:text-gray-200"><a href="contact.html">Reach Us!</a></li>
+      </ul>
       </nav>
+    </button>
     </header>
 
     <main class="my-8">  <div class="flex flex-col items-center">
@@ -43,5 +51,7 @@
     <a href="#" class="text-blue-900 underline">Back to top</a>
     &lt;&lt;&lt; Mike &copy; 2024 &gt;&gt;&gt;
   </footer>
+
+  <script src="./main.js"></script>
 </body>
 </html>
