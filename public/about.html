@@ -3,92 +3,89 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mike's Hub</title>
-  <link href="../public/style.css" rel="stylesheet">
-  <link rel="icon" type="image/x-icon" href="./my images/icon.png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
-        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Mike's Hub - About</title>
+  <link href="./style.css" rel="stylesheet" >
+  <link rel="icon" type="image/x-icon" href="../public/my images/icon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="./main.js"></script>
 </head>
-<body class="bg-orange-400 border-l border-r"> 
-    <header class="bg-gray-700  border-b-black">
-        <div class="flex justify-between items-center p-4">
-            <h1 class="text-3xl text-white ">My Bio</h1>
-            <div class="relative">
-              <button type="button" id="dropdownToggle" aria-label="Menu" class="flex items-center justify-center bg-gray-800 p-2 rounded-md">
-                <i class="fa-solid fa-bars text-white"></i>
-              </button>
-              <nav id="dropdownMenu" class="hidden absolute top-12 right-0 bg-gray-800 rounded-md text-white p-2 z-10">
-                <ul>
-                  <li class="hover:bg-gray-700 p-2"><a href="home.html">Home</a></li>
-                  <li class="hover:bg-gray-700 p-2"><a href="project.html">My mini project</a></li>
-                  <li class="hover:bg-gray-700 p-2"><a href="contact.html">Contact</a></li>
-                </ul>
-              </nav>
-            </div>
-            
+<body class="bg-orange-400">
+  <header class="bg-gray-800 text-white p-4 border-b border-gray-700">
+    <div class="flex justify-between items-center">
+      <h1 class="text-3xl">About Mike</h1>
+      <button type="button" id="dropdownToggle" aria-label="Menu" class="flex items-center justify-center bg-gray-700 p-2 rounded-md">
+        <i class="fa-solid fa-bars text-white"></i>
+      </button>
+      <nav id="dropdownMenu" class="hidden absolute top-14 right-0 bg-gray-700 rounded-md z-10 text-white p-2">
+        <ul class="space-y-2">
+          <li class="hover:bg-gray-600 p-2"><a href="home.html">Home</a></li>
+          <li class="hover:bg-gray-600 p-2"><a href="project.html">My Projects</a></li>
+          <li class="hover:bg-gray-600 p-2"><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-</header>
-<main>
-    <div>
-        <h1 class="text-3xl flex justify-items-center">Background info:</h1>
-        <br>
-    <p>
-        I was born in 2003 In Siaya county. I came to Nairobi in 2005. I started schooling in the year 2009 in a school called <strong>St Joseph of tarbes.</strong> I was later transfered to Nelson Mandela school that was around 2018. That is after securing a schorlaship with Ngong Road Children Foundation.
-    </p>
-    <br>
-    <div class="flex">
-        <figure class="flex flex-col">
-            <img src="../public/my images/mom.jpg" alt="" class="w-72 h-72 rounded-3xl float-left">
-            <figcaption><em>My Mom and I during my High school visiting day</em></figcaption>
-        </figure>
-        <br>
-        <p class="p-2">
-            My Mother has always been My pillar of strength.
-            <br>
-            I did My High school Education in <a href="https://www.easyelimu.com/schools/school/109-st_marys_yala_high__school.html">St Mary's school Yala.</a>  You can visit the link to learn more about <abbr title="St Mary,s yala" class="cursor-auto">SMY</abbr>
-        </p>
-               </div>
-
-    </div>
-    <br><br><br>
-    <div>
-        <h3 class="text-2xl font-bold">Directed's</h3>
-        <br>
-        <p>
-            Well Coding is fun😊. After Finishing highschool, I joined Directed for a short coding bootcamp.
-            <br>
-            So far so good. I have really learnt a lot from them. I joined directed so that I can have a hands on skill in coding and web development. 
-        </p>
-    </div>
-<br><br><br><br>
-    <div>
-<h4 class="text-2xl font-bold">My hobies</h4>
-<br>
-<figuren class="flex gap-4">
-    <img src="../public/my images/hobby-goalie.jpeg" alt="golie" class="h-72 rounded-3xl">
-    <figcaption>I am a goal Keeper in Nrcf football team.</figcaption>
-    <img src="../public/my images/swimming.jpg" alt="swimming" class="h-72 w-72 rounded-3xl">
-    <figcaption>I live and love swimming.</figcaption>
-    <img src="../public/my images/hobby-martialarts.jpeg" alt="hobby-martialarts" class="h-72 rounded-3xl">
-    <figcaption>I do some bits of Martial arts.</figcaption>
-    <img src="../public/my images/hobby-dance.jpg" alt="dancing">
-    <figcaption>I love dancing. It makes me feel alive.</figcaption>
-</figure>
-    </div>
-</main>
-<br><br><br><br><br>
-<footer class="bg-gray-700 text-center text-white   bottom-0 w-full">
-  <ul class="flex justify-center gap-4 mb-2 list-none">
-    <li><a href="https://www.instagram.com/" class="hover:text-gray-300"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
-    <li><a href="https://wa.me/254703222614" class="hover:text-gray-300"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a></li>
-    <li><a href="https://twitter.com/" class="hover:text-gray-300"><i class="fa-solid fa-x"></i> Twitter</a></li>
-  </ul>
-  <br>  
-  <a href="#" class="text-red-900 underline animate-bounce">Back to top</a>
-  <p>Mike &copy; 2024</p>
-</footer>
-<script src="./main.js"></script>
+  </header>
+  
+  <main class="container mx-auto p-6 rounded-lg shadow-lg">
+    <section class="mb-6">
+      <h2 class="text-3xl font-semibold">Background</h2>
+      <p class="mt-4">
+        I was born in 2003 in Siaya County, Kenya. I moved to Nairobi in 2005. I started schooling in 2009 at St. Joseph of Tarbes. Later, I transferred to Nelson Mandela School in 2018 after receiving a scholarship from the Ngong Road Children Foundation.
+      </p>
+    </section>
+    
+    <section class="mb-6">
+      <h3 class="text-2xl font-semibold">Family</h3>
+      <div class="flex items-center gap-4 mt-4">
+        <img src="../public/my images/mom.jpg" alt="Mom and me" class="w-48 h-48 rounded-full">
+        <div>
+          <p>
+            My mother has always been my pillar of strength. This photo was taken during my high school visiting day at St. Mary's School, Yala. You can learn more about my school <a href="https://www.easyelimu.com/schools/school/109-st_marys_yala_high__school.html" target="_blank" class="text-blue-600 underline">here</a>.
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    <section class="mb-6">
+      <h3 class="text-2xl font-semibold">Career</h3>
+      <p class="mt-4">
+        After high school, I joined Directed for a coding bootcamp to gain hands-on coding and web development skills. I have learned a lot and am excited about the future.
+      </p>
+    </section>
+    
+    <section class="mb-6">
+      <h3 class="text-2xl font-semibold">Hobbies</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-4">
+        <div class="flex flex-col items-center">
+          <img src="../public/my images/hobby-goalie.jpeg" alt="Goalkeeper" class="w-48 h-48 rounded-full">
+          <figcaption class="mt-2 text-center">I play as a goalkeeper for the NRCF football team.</figcaption>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="../public/my images/swimming.jpg" alt="Swimming" class="w-48 h-48 rounded-full">
+          <figcaption class="mt-2 text-center">I love swimming; it's a great way to relax.</figcaption>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="../public/my images/hobby-martialarts.jpeg" alt="Martial Arts" class="w-48 h-48 rounded-full">
+          <figcaption class="mt-2 text-center">Martial arts keep me active and focused.</figcaption>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="../public/my images/hobby-dance.jpg" alt="Dancing" class="w-48 h-48 rounded-full">
+          <figcaption class="mt-2 text-center">I enjoy dancing—it makes me feel alive.</figcaption>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <footer class="bg-gray-800 text-center text-white p-6">
+    <ul class="flex justify-center gap-6 mb-2">
+      <li><a href="https://www.instagram.com/" class="hover:text-gray-300"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+      <li><a href="https://wa.me/254703222614" class="hover:text-gray-300"><i fa-brands fa-whatsapp></i> WhatsApp</a></li>
+      <li><a href="https://twitter.com/" class="hover:text-gray-300"><i class="fa-brands fa-twitter"></i> Twitter</a></li>
+    </ul>
+    <a href="#" class="text-blue-500 underline animate-bounce">Back to top</a>
+    <p>Mike &copy; 2024</p>
+  </footer>
+  
+  <script src="./main.js"></script>
 </body>
 </html>
