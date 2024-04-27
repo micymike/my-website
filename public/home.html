@@ -4,31 +4,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mike's Hub</title>
-  <link href="./style.css" rel="stylesheet">
-  <link rel="icon" type="image/x-icon" href="./my_images/icon.png">
+  <link href="../public/style.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="./my images/icon.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
         crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="./main.js"></script>
 </head>
-<body class="bg-orange-400 p-0 m-0 h-screen w-full">
-  <div class="container mx-auto px-4">
-    <header class="flex justify-between items-center p-4 bg-gray-700 rounded-md">
-      <h1 class="text-3xl font-serif text-white">Michael A. Moses</h1>
-      <div class="relative">
-        <button type="button" id="dropdownToggle" aria-label="Menu">
-          <i class="fa-solid fa-bars text-white"></i>
-        </button>
-        <nav id="dropdownMenu" class="hidden absolute top-12 right-0 bg-gray-800 rounded-md text-white p-2">
-          <ul>
-            <li class="hover:bg-gray-700 p-2"><a href="project.html">Mini Projects</a></li>
-            <li class="hover:bg-gray-700 p-2"><a href="about.html">About</a></li>
-            <li class="hover:bg-gray-700 p-2"><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-
+<body class="bg-orange-400 border-l border-r"> 
+    <header class="bg-gray-700  border-b-black">
+        <div class="flex justify-between items-center p-4">
+            <h1 class="text-3xl text-white ">Michae A. Moses</h1>
+            <div class="relative">
+              <button type="button" id="dropdownToggle" aria-label="Menu" class="flex items-center justify-center bg-gray-800 p-2 rounded-md">
+                <i class="fa-solid fa-bars text-white"></i>
+              </button>
+              <nav id="dropdownMenu" class="hidden absolute top-12 right-0 bg-gray-800 rounded-md text-white p-2 z-10">
+                <ul>
+                  <li class="hover:bg-gray-700 p-2"><a href="contact.html">Contacts</a></li>
+                  <li class="hover:bg-gray-700 p-2"><a href="project.html">My projects</a></li>
+                  <li class="hover:bg-gray-700 p-2"><a href="about.html">About</a></li>
+                </ul>
+              </nav>
+            </div>
+            
+    </div>
+</header>
     <main class="my-8">
       <div class="flex flex-col items-center">
         <figure class="w-64 mb-4">
