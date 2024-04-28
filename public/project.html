@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mike's Hub - Mini-Projects</title>
   <link rel="stylesheet" href="./style.css">
-  <link rel="icon" type="image/x-icon" href="./my_images/icon.png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" type="image/x-icon" href="./my images/icon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
   <script src="./main.js"></script>
 </head>
 <body class="bg-orange-400"> 
@@ -14,46 +14,57 @@
         <div class="flex justify-between items-center">
             <h1 class="text-3xl font-bold">Mini-Projects</h1>
             <div class="relative">
-              <button type="button" id="dropdownToggle" aria-label="Menu" class="flex items-center justify-center bg-gray-800 p-2 rounded-md hover:bg-gray-700 transition-all duration-300">
-                <i class="fa-solid fa-bars text-white"></i>
+              <button type="button" id="dropdownToggle" aria-label="Menu" class="flex items-center justify-center bg-gray-800 p-2 rounded-md hover:bg-gray-700 transition-colors duration-300">
+                <i class="fa-solid fa-bars"></i>
               </button>
-              <nav id="dropdownMenu" class="hidden absolute top-14 right-0 bg-gray-800 rounded-md z-10 text-white p-2 transition-all duration-300">
+              <nav id="dropdownMenu" class="hidden absolute top-14 right-0 bg-gray-800 rounded-md z-10 text-white p-2 transition-opacity duration-300">
                 <ul class="space-y-2">
-                  <li class="hover:bg-gray-700 p-2"><a href="home.html">Home</a></li>
-                  <li class="hover:bg-gray-700 p-2"><a href="about.html">About</a></li>
-                  <li class="hover:bg-gray-700 p-2"><a href="contact.html">Contact</a></li>
+                  <li class="hover:bg-gray-700 p-2"><a href="home.html" class="block">Home</a></li>
+                  <li class="hover:bg-gray-700 p-2"><a href="about.html" class="block">About</a></li>
+                  <li class="hover:bg-gray-700 p-2"><a href="contact.html" class="block">Contact</a></li>
                 </ul>
               </nav>
             </div>
         </div>
     </header>
 
-    <!-- Project Section -->
+    
     <section class="container mx-auto py-8">
       <figure class="flex justify-center">
-        <img src="../public/my images/coding.jpg" alt="Coding in session" class="w-72 h-72 rounded-full">
+        <img src="../public/my images/coding.jpg" alt="Coding in session" class="w-72 h-72 rounded-full shadow-lg">
       </figure>
-      <figcaption class="text-center text-gray-800 mt-4">🤫 Coding in session!</figcaption>
+      <figcaption class="text-center text-gray-800 mt-4">Coding in session!</figcaption>
 
-      <p class="mt-6 text-center text-gray-700">
-        I enrolled in Directed's coding bootcamp two weeks ago. Since then, I've learned several programming languages:
-      </p>
+      <div class="text-center mt-6 text-gray-700">
+        <p>
+          I enrolled in Directed's coding bootcamp two weeks ago. Since then, I've learned several programming languages:
+        </p>
+        <ul class="list-disc list-inside">
+          <li>HTML - HyperText Markup Language</li>
+          <li>CSS - Cascading Style Sheets</li>
+          <li>TailwindCSS</li>
+        </ul>
+        <p>
+          As a result, I have built the following projects:
+        </p>
+      </div>
+    </section>
 
-    <!-- Projects Section -->
+   
     <section class="container mx-auto py-10">
       <h3 class="text-2xl font-bold text-center">Projects</h3>
-      <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="bg-white p-6 rounded-lg shadow-lg transition-all hover:scale-105">
+      <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 lg-grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-lg shadow-lg transition-transform hover:scale-105 hover:shadow-xl">
           <h4 class="text-xl font-semibold">Project 1: Taco Shop</h4>
-          <a href="https://github.com/micymike/first-html-project.git" class="underline text-gray-700">View on GitHub</a>
+          <a href="https://github.com/micymike/first-html-project.git" class="text-blue-500 underline">View on GitHub</a>
         </div>
-        <div class="bg-white p-6 rounded-lg shadow-lg transition-all hover:scale-105">
+        <div class="bg-white p-6 rounded-lg shadow-lg transition-transform hover:scale-105 hover:shadow-xl">
           <h4 class="text-xl font-semibold">Project 2: Updated Taco Shop</h4>
-          <a href="https://github.com/micymike/taco-project.git" class="underline text-gray-700">View on GitHub</a>
+          <a href="https://github.com/micymike/taco-project.git" class="text-blue-500 underline">View on GitHub</a>
         </div>
-        <div class="bg-white p-6 rounded-lg shadow-lg transition-all hover:scale-105">
+        <div class="bg-white p-6 rounded-lg shadow-lg transition-transform hover:scale-105 hover:shadow-xl">
           <h4 class="text-xl font-semibold">Project 3: Mike's Rocket</h4>
-          <a href="https://github.com/micymike/Mike-s-rocket.git" class="underline text-gray-700">View on GitHub</a>
+          <a href="https://github.com/micymike/Mike-s-rocket.git" class="text-blue-500 underline">View on GitHub</a>
         </div>
       </div>
     </section>
@@ -62,9 +73,9 @@
 
     <footer class="bg-gray-800 text-white text-center py-6">
       <ul class="flex justify-center gap-6">
-        <li><a href="https://www.instagram.com/" class="hover:text-gray-300 transition-all duration-300"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
-        <li><a href="https://wa.me/254703222614" class="hover:text-gray-300 transition-all duration-300"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a></li>
-        <li><a href="https://twitter.com/" class="hover:text-gray-300 transition-all duration-300"><i class="fa-brands fa-twitter"></i> Twitter</a></li>
+        <li><a href="https://www.instagram.com/" class="hover:text-gray-300 transition-colors duration-300"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+        <li><a href="https://wa.me/254703222614" class="hover:text-gray-300 transition-colors duration-300"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a></li>
+        <li><a href="https://twitter.com/" class="hover:text-gray-300 transition-colors duration-300"><i class="fa-brands fa-twitter"></i> Twitter</a></li>
       </ul>
       <a href="#" class="text-blue-500 underline animate-bounce">Back to top</a>
       <p>Mike &copy; 2024</p>
